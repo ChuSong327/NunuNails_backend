@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('dotenv').config({path: __dirname + '/../.env'});
 const faker = require("faker");
 const mongoose = require("mongoose");
 

@@ -1,11 +1,10 @@
-require('dotenv').config();
+require('dotenv').config({path: __dirname + '/../.env'});
 const faker = require("faker");
 const mongoose = require("mongoose");
 
 const Products = require("../db/products");
 
 const dbUrl = `mongodb+srv://chucsong:${process.env.DB_PASSWORD}@cluster0.mbs6m.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
-
 //db connection
 mongoose.connect(dbUrl, { useNewUrlParser: true });
 
