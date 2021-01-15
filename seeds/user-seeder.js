@@ -6,7 +6,6 @@ const Users = require("../db/users");
 
 const dbUrl = `mongodb+srv://chucsong:${process.env.DB_PASSWORD}@cluster0.mbs6m.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
 
-
 //db connection
 mongoose.connect(dbUrl, { useNewUrlParser: true });
 

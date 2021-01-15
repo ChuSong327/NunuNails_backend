@@ -23,7 +23,7 @@ app.use(
 app.use(cookieParser());
 app.use(bodyParser.json());
 
-const dbUrl = `mongodb+srv://chucsong:${process.env.DB_PASSWORD}@cluster0.mbs6m.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`
+const dbUrl = `mongodb+srv://chucsong:${process.env.DB_PASSWORD}@cluster0.mbs6m.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
 
 //db connection
 mongoose.connect(
