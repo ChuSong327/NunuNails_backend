@@ -5,7 +5,7 @@ const router = express.Router();
 
 const corsOptions = {
     origin: [
-        "http://www.nununails.com",
+        "https://nununailsfrontend.herokuapp.com",
         "http://localhost:4200"
     ],
     optionSuccessStatus: 200
